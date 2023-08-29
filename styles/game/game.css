@@ -1,0 +1,144 @@
+.game-container{
+    background-color: var(--gray-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+    color: var(--violet-dark);
+    border-top: 2px solid var(--violet-dark);
+}
+
+.game-explanation-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+.game-guesses{
+    margin: 2vw;
+    text-align: center;
+}
+
+.guess-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vw;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.input-guess{
+    padding: 1rem;
+    font-size: 25px;
+    border-radius: 2vw;
+    outline: none;
+}
+
+.input-guess:focus{
+    border: 1px solid var(--beige);
+}
+
+.button-guess{
+    font-size: 20px;
+    padding: 2vw;
+    border-radius: 5vw;
+    border: none;
+    background-color: var(--beige);
+    color: var(--violet-dark);
+    box-shadow: 3px 3px 10px var(--black);
+}
+
+.button-guess:hover{
+    background-color: var(--violet-light);
+    color: var(--beige);
+}
+
+.information-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw;
+    gap: 2vw;
+}
+
+.information-state{
+    font-size: 25px;
+}
+
+.play-again{
+    font-size: 20px;
+    padding: 2vw;
+    border-radius: 5vw;
+    border: none;
+    background-color: var(--beige);
+    color: var(--violet-dark);
+    box-shadow: 3px 3px 10px var(--black);
+}
+
+.play-again:hover{
+    background-color: var(--violet-light);
+    color: var(--beige);
+}
+
+
+@media (min-width: 830px) {
+    .game-container{
+        padding: 2vw;
+    }
+    
+    .game-explanation-container{
+        
+    }
+    
+    .game-title{
+        
+    }
+    
+    .game-guesses{
+        margin: 1vw;
+    }
+    
+    .guess-container{
+        flex-direction: row;
+        margin: 2vw;
+        gap: 1rem;
+    }
+    
+    .input-guess{
+        padding: 1rem;
+        font-size: 20px;
+        border-radius: 1vw;
+    }
+    
+    .input-guess:focus{
+        border: 1px solid var(--beige);
+    }
+    
+    .button-guess{
+        font-size: 16px;
+        padding: 1vw;
+        border-radius: 2vw;
+    }
+    
+    .information-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vw;
+        gap: 2vw;
+    }
+    
+    .play-again{
+        font-size: 16px;
+        padding: 1vw;
+        border-radius: 2vw;
+    }
+}

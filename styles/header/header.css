@@ -1,0 +1,46 @@
+header{
+    background-color: var(--violet-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    width: 100%;
+}
+
+.header-options{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 1vw;
+    font-size: 18px;
+}
+
+.header-title{
+    font-size: 25px;
+    margin: 1.5vw;
+    color: var(--beige);
+    font-weight: 500;
+}
+
+.option-link{
+    text-decoration: none;
+    color: var(--beige);
+    padding: 2vw;
+}
+
+.option-link:hover{
+    background-color: var(--violet-light);
+    cursor: pointer;
+}
+
+@media (min-width: 830px) {
+    header{
+        flex-direction: row;
+    }
+
+    .header-options{
+        width: 20%;
+    }
+}

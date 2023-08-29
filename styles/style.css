@@ -1,0 +1,20 @@
+@import url("./header/header.css");
+@import url("./rules/rules.css");
+@import url("./game/game.css");
+@import url("./footer/footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --main-font: 'Ubuntu', sans-serif;
+    --violet-dark: #352F44;
+    --violet-light: #5C5470;
+    --gray-light: #B9B4C7;
+    --beige: #FAF0E6;
+    --black: #000000;
+}
+
+body{
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+}

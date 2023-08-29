@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.shareicon.net/data/256x256/2017/04/28/885308_question_512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>A GAME TO GUESS</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">A GAME TO GUESS</h1>
+
+        <ul class="header-options">
+            <li class="option">
+                <a class="option-link" href="#rules-container">RULES</a>
+            </li>
+
+            <li class="option">
+                <a class="option-link" href="#game-container">PLAY NOW!</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="rules-container" id="rules-container">
+            <div class="rules-explanation-container">
+                <h1 class="rules-title">A GAME TO GUESS - STEP BY STEP</h1>
+                <p class="rules-explanation">This game consists in guessing a random number sorted by a software.</p>
+            </div>
+            
+            <div class="steps-container">
+                <ol class="steps">
+                    <li class="step">
+                        <h2 class="step-description">1. Inside the text box, type your guess to the random number</h2>
+                    </li>
+
+                    <li class="step">
+                        <h2 class="step-description">2. Click in the button "GUESS NOW!" to check if you typed the right number.</h2>
+                    </li>
+
+                    <li class="step">
+                        <h2 class="step-description">3. Down the text box, there will be tips about the sorted number, based on your guess.</h2>
+                    </li>
+
+
+                    <li class="step">
+                        <h2 class="step-description">4. Do the previous steps over and over again, until appears the message, "YOU WON!".</h2>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="game-container" id="game-container">
+            <div class="game-explanation-container">
+                <h1 class="game-title">PLAY HERE!</h1>
+                <p class="game-guesses">The guesses should be between <span id="minor-number">1</span> and <span id="bigger-number">100</span></p>
+            </div>
+
+            <div class="guess-container">
+                <input class="input-guess" type="number" name="guess" id="guess-input" placeholder="Type tour guess here...">
+                <input class="button-guess" type="button" value="GUESS NOW!" id="guess-button">
+            </div>
+
+            <div class="information-container" id="information-container">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1 class="footer-title">© Marcos Daniel 2023</h1>
+    </footer>
+
+    <script src="./scripts/script.js" type="module"></script>
+</body>
+</html>
